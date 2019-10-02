@@ -1,0 +1,234 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  /* Typography */
+  font-size: 24px;
+  line-height: 32px;
+  color: #777777;
+  font-family: Arial, Helvetica, sans-serif
+
+  /* Visual */
+  background-color: #ccc;
+}
+
+.container {
+  /* Box-model */
+  width: 1024px;
+  margin: 40px auto;
+  z-index: -1;
+
+}
+
+#image{
+  width: 33.3%
+}
+
+#myPic { 
+  float: left;
+    vertical-align: top;
+    margin: 7px 7px 7px 20px;
+    
+    
+  }
+
+@media screen and (max-width: 768px) {
+  
+  .container {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around;
+  }
+
+  #image {
+    width: 33%;
+    display: flex
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 640px)
+{
+  .container {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #image {
+    width: 100%;
+    display: flex
+    justify-content: space-around;
+  }
+
+  #myPic { 
+    float: unset;
+      vertical-align: top;
+      margin: 7px 7px 7px 20px;
+     
+    }
+
+}
+
+/* body {
+    font-size: 24px;
+    line-height: 32px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+  } */
+
+  /* form{
+    margin-left: 20px;
+  } */
+  
+  /* #container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background:#ffffff;
+    border: solid 1px #cccccc;
+    z-index: 0;
+  } */
+
+  /* .container {
+    position: relative;
+    top: 10vh;
+    left: 10%; 
+    width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: #ffffff;
+    border: solid 1px #dddddd;
+    z-index: -1;
+  } */
+
+  /* #yourName {
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    top: 0;
+    left: 10%;
+
+    width:15vw;
+    height: 10vh;
+    background: #4aaaa5;
+    color: #cccccc;
+
+  } */
+
+  /* .section{
+      position: relative;
+      text-align: center;
+      top: -100%;
+    left: 55%;
+    display: flex;
+    justify-content: space-around;
+    width: 45vw;
+    height: 10vh;
+} */
+
+/* .section2{
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0; 
+} */
+
+/* .section3{
+  display: flex;
+  justify-content: space-around;
+
+   padding: 45px 0; 
+ 
+} */
+
+/* .card{
+  width: 300px;
+  height: 300px;
+} */
+
+
+   /* #about {
+
+    width: 15vw;
+    height: 10vh;
+    line-height: 50px;
+  }  */
+
+   /* #portfolio {
+
+    width: 15vw;
+    height: 10vh;
+    line-height: 50px;
+  }  */
+
+   /* #contact {
+
+    width: 15vw;
+    height: 10vh;
+    line-height: 50px;
+
+  }  */
+
+  /* h1 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 36px;
+    margin-left: 20px;
+    line-height: 45px;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  } */
+  
+
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+  }
+
+
+
+
+ input[type=text], select, textarea {
+    width: 80%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    margin-left: 20px;
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .footer {
+  
+    border-top: 8px solid #4aaaa5;
+    height: 5vh;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background:#ffffff;
+  z-index: 0;
+  }
