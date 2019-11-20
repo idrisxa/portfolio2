@@ -4,66 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Prompt:300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/581e33120b.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
     
         <!-- Start Nav -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <span class="navbar-brand mb-1 h1">Idris Adebisi</span>
-       
-    
-        
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-            
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light navig">
+      <div class="row" style="display: flex; justify-content: space-around; padding-top: 20px">
+          <div class="col-3">
+            <span class="navbar-brand mb-1 h1" style="color:grey;"><strong>Idris Adebisi</strong></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "profilepic"></div>
+
+          </div>
+
+          <div class="col-3">
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item h1">
+                      <a class="nav-link" style="color:grey; font: 20px 'Prompt', sans-serif;" href="https://github.com/idrisxa">Github</a>
+                      <a class="nav-link" style="color:grey; font: 20px 'Prompt', sans-serif;" href="https://www.linkedin.com/in/idris-adebisi-57395687/">LinkedIn</a>
+                      <a class="nav-link" style="color:grey; font: 20px 'Prompt', sans-serif;" href="https://twitter.com/idriss_a">Twitter</a>
+                      <a class="nav-link" style="color:grey; font: 20px 'Prompt', sans-serif;" href="https://www.instagram.com/howmanybirds/">Instagram</a>
+                      <!-- <a class="nav-link" style="color:grey; font: 20px Arial, Helvetica, sans-serif" href="main.html">Resume</a> -->
+                    </li>
+                  </ul>
+          </div>
+          </div>
 
     
-          </ul>
+          <!-- <div class="col-3">
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo04">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item h1">
+                      <a class="nav-link" style="color:grey; font: 20px Arial, Helvetica, sans-serif">midrisadebisi@gmail.com</a>
+
+                      </li>
+                  </ul>
+              </div>
+          </div> -->
+
+          <div class="col-6">
+              <div class="collapse navbar-collapse h1 aboutMe" id="navbarTogglerDemo05">
+              <p>I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making or listening to some music. Currently improving my web development skills at the University of Toronto.  </p>
+              </div>
+          </div>
         
       </nav>
       <!-- End Nav -->
 
       <div class="container">
+          <div class="row">
+              <div class="col-12">          
+                      <div class="card">
+                        <div class="row">
+                          <div class = "col-4">
+                              <img src="assets/images/soccers.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class = "col-8">
+                              <div class="card-body posrel">
+                                  <h5 class="card-title h5">CoLeague<hr></h5>
+                                  <div class="card-text">
+                                    <p>CoLEAGUE is a football application that promotes teambuilding among colleagues. CoLEAGUE combines the friendly competition instilled within fantasy leagues with the excitement of sports betting. Colleagues place individual bets on English Premier League Teams to compete against one another.</p>
+                                  </div>
+                                  <div class="card-action">
+                                    <a href="https://polar-fortress-89854.herokuapp.com/" class="btn btn-primary">Website</a>
+                                    <a href="https://github.com/ldifederico/Fantasy-League" class="btn btn-primary">GitHub</a>
+                                  </div>
+                              </div>
+                          </div>          
+                        </div>            
+                        </div> 
+              </div>
+            </div>
             <div class="row">
-                    <div class="col-12">
-                                    <div class="page-header">
-                                        <h1>About Me</h1>
-                                        <hr>
+                    <div class="col-12">          
+                            <div class="card cardrow">
+                              <div class="row">
+                                <div class = "col-4">
+                                    <img src="assets/images/Bookshelf.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class = "col-8">
+                                    <div class="card-body posrel">
+                                        <h5 class="card-title h5">Bookshelf<hr></h5>
+                                        <div class="card-text">
+                                          <p>Built to help the user discover their next great read. Bookshelf allows the user to search a desired author, title or genre and provides results based on the input criterion</p>
+                                        </div>
+                                        <div class="card-action">
+                                          <a href="https://kevin-on-davis.github.io/KLIP_Project/" class="btn btn-primary">Website</a>
+                                          <a href="https://github.com/kevin-on-davis/KLIP_Project" class="btn btn-primary">GitHub</a>
+                                        </div>
                                     </div>
-                                </div>
-                                </div>
-
-                <div class="row">
-                        <div class="col-12" >
-                                <img id="myPic" src="assets/images/portrait.jpg" alt="Placeholder" class="img-thumbnail">
-                                <p>
-                                
-                                    I'm a web developer based in Toronto, currently improving my skills. I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making or listening to some music </p>
-            
-                                        
-                            </div>
+                                </div>          
+                              </div>            
+                              </div> 
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12">          
+                              <div class="card cardrow">
+                                <div class="row">
+                                  <div class = "col-4">
+                                      <img src="assets/images/weather.jpg" class="card-img-top" alt="...">
+                                  </div>
+                                  <div class = "col-8">
+                                      <div class="card-body posrel">
+                                          <h5 class="card-title h5">Weather Dashboard<hr></h5>
+                                          <div class="card-text">
+                                              <p>A weather dashboard application with search functionality to find current weather conditions and the future weather outlook for multiple cities</p>
+                                            </div>
+                                            <div class="card-action">
+                                                <a href="https://idrisxa.github.io/Weather-Dashboard/" class="btn btn-primary">Website</a>
+                                                <a href="https://github.com/idrisxa/Weather-Dashboard" class="btn btn-primary">GitHub</a>
+                                              </div>
+                                      </div>
+                                  </div>          
+                                </div>            
+                                </div> 
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">          
+                                <div class="card cardrow">
+                                  <div class="row">
+                                    <div class = "col-4">
+                                        <img src="assets/images/password.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class = "col-8">
+                                        <div class="card-body posrel">
+                                            <h5 class="card-title h5">Password Generator<hr></h5>
+                                            <div class="card-text">
+                                                <p>An application that generates a random password based on user-selected criteria. User selects character types to be contained in password </p>
+                                              </div>
+                                              <div class="card-action">
+                                                  <a href="https://idrisxa.github.io/Password-Generator/" class="btn btn-primary">Website</a>
+                                                  <a href="https://github.com/idrisxa/Password-Generator" class="btn btn-primary">GitHub</a>
+                                              </div>
+                                        </div>
+                                    </div>          
+                                  </div>            
+                                  </div> 
                         </div>
-
-                        
-                        
-                                
-                                    <div class="footer">
-                                        <p>Copyright © 2019 IDRO</p>
-                                    </div>  
-                                
-                        </div>
-                        </div>
+                      </div>
+              </div>
 
 
 </body>
